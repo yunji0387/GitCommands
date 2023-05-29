@@ -1,2 +1,3 @@
 # GitCommands
-A list of Git commands I frequently used.
+## A list of Git commands I frequently used.
+
