@@ -1,5 +1,7 @@
 # Git Commands
-## A list of Git commands I frequently used.
+A list of Git commands I frequently used.
+
+---
 
 ### Example of uploading a local repository to remote server.
   1. Initialize a local repository: 
@@ -46,11 +48,45 @@
       ```bash
       git remote -v
       ```  
-  9.  Always pull before push (origin = remote name)
+  9.  Always pull before push (origin = remote name, main = local branch)
       ```bash
       git pull origin main
       ``` 
-  10. Push to remote server (origin = remote name)
+      - If the files on remote are incosistent with local repository (Example: there is a README.md on remote server that local repository does not have)
+        ```bash
+        git pull origin main --allow-unrelated-histories
+        ``` 
+  10. Push to remote server (origin = remote name, main = local branch)
       ```bash
       git push origin main
       ``` 
+---
+### Other useful commands
+  - Clone a repository from remote server
+    ```bash
+     git clone <GitHub repository url>
+    ``` 
+  - Create new branch
+    ```bash
+     git branch <Branch name>
+    ``` 
+  - Switch new branch
+    ```bash
+     git checkout <Branch name>
+    ``` 
+  - Review commit histories
+    ```bash
+     git log
+    ``` 
+    - Review n commit histories
+      ```bash
+       git log -n <count>
+      ``` 
+  - Review file differences between local directory and staged area
+    ```bash
+     git diff <File name>
+    ``` 
+  - Review file differences between staged area and remote server
+    ```bash
+     git diff --staged <File name>
+    ``` 
