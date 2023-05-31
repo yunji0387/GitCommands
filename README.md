@@ -90,3 +90,12 @@ A list of Git commands I frequently used.
     ```bash
      git diff --staged <File name>
     ``` 
+  - Ignore certain files/directories in local repository to be push to remote repository
+    ```bash
+     touch .gitignore
+    ``` 
+    ```bash
+     vi .gitignore
+    ``` 
+    - ![Image](/images/gitIgnoreTutorial.png)
+    
