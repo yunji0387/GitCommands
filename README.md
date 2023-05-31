@@ -91,11 +91,13 @@ A list of Git commands I frequently used.
      git diff --staged <File name>
     ``` 
   - Ignore certain files/directories in local repository to be push to remote repository
+    1. create a .gitignore in local repository directory and open it
     ```bash
      touch .gitignore
     ``` 
     ```bash
      vi .gitignore
     ``` 
-    - ![Image](/Images/gitIgnoreTutorial.png)
-    
+    2. add files/directories to be ignored, and save it (esc -> :wq) 
+       - ![Image](/Images/gitIgnoreTutorial.png)
+    3. finally push .gitignore to remote repository  
