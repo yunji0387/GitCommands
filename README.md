@@ -97,5 +97,5 @@ A list of Git commands I frequently used.
     ```bash
      vi .gitignore
     ``` 
-    - ![Image](/images/gitIgnoreTutorial.png)
+    - ![Image](/Images/gitIgnoreTutorial.png)
     
