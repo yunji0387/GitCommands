@@ -78,6 +78,28 @@ A list of Git commands I frequently used.
     ```bash
      git push -u origin <branch-name>
     ``` 
+  - Merge branch
+    1. fetch latest changes from remote server
+       ```bash
+          git fetch
+        ```
+    2. switch to target branch you want to merge into (ex: main)
+       ```bash
+          git checkout main
+        ```
+    3. merge you source branch(ex: Development) into the target branch 
+       ```bash
+          git merge Development
+        ```
+      - if merge conflicts occurs, you have to resolve the conflicts first, then stage and commit all the files (Development = source branch , main = target branch)
+        ```bash
+          git add .
+          git commit -m "Merge <source-branch> into <target-branch>"
+        ```
+    4. push to remote server (origin = remote server , main = local target branch)
+       ```bash
+          git push origin main
+        ```
   - Review commit histories
     ```bash
      git log
