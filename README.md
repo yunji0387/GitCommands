@@ -101,3 +101,13 @@ A list of Git commands I frequently used.
     2. add files/directories to be ignored, and save it (esc -> :wq) 
        - ![Image](/Images/gitIgnoreTutorial.png)
     3. finally push .gitignore to remote repository  
+
+  - Undo an accidental deleted files/directories after git pull request
+    1.  Use git reflog to track all changes
+    ```bash
+     git reflog
+    ``` 
+    2.  switch to the desired Head index ( n = desired index)
+    ```bash
+     git checkout HEAD@{n}
+    ``` 
