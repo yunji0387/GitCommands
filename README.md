@@ -74,6 +74,10 @@ A list of Git commands I frequently used.
     ```bash
      git checkout <Branch name>
     ``` 
+  - Push a new branch that is not yet exists in the remote server (origin = remote name)
+    ```bash
+     git push -u origin <branch-name>
+    ``` 
   - Review commit histories
     ```bash
      git log
