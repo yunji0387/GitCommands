@@ -24,7 +24,7 @@ A list of Git commands I frequently used.
         ```bash
         git reset <file1> <file 2> <file 3>
         ``` 
-      - Unstaging specific files
+      - Unstaging all files
         ```bash
         git reset
         ``` 
